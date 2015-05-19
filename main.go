@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	log.Println("ready...")
+	log.Println("ready auth...")
 	http.HandleFunc("/callback", callback)
 	err := http.ListenAndServe(":80", nil)
 	if check_err(err) {
